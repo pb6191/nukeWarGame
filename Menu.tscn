@@ -1,0 +1,316 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://OptionButton.gd" type="Script" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+[ext_resource path="res://OptionButton2.gd" type="Script" id=3]
+[ext_resource path="res://OptionButton3.gd" type="Script" id=4]
+[ext_resource path="res://OptionButton4.gd" type="Script" id=5]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 115.0
+rect_scale = Vector2( 2, 2 )
+text = "Distribution"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 130.0
+margin_top = 130.0
+margin_right = 159.0
+margin_bottom = 150.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 100.0
+margin_right = 500.0
+margin_bottom = 115.0
+rect_scale = Vector2( 2, 2 )
+text = "Min Std Dev"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+margin_left = 700.0
+margin_top = 100.0
+margin_right = 800.0
+margin_bottom = 115.0
+rect_scale = Vector2( 2, 2 )
+text = "Max Std Dev"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton2" type="OptionButton" parent="."]
+margin_left = 130.0
+margin_top = 330.0
+margin_right = 159.0
+margin_bottom = 350.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton3" type="OptionButton" parent="."]
+margin_left = 130.0
+margin_top = 530.0
+margin_right = 159.0
+margin_bottom = 550.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 800.0
+margin_top = 500.0
+margin_right = 850.0
+margin_bottom = 520.0
+rect_scale = Vector2( 2, 2 )
+text = "START"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 100.0
+margin_top = 200.0
+margin_right = 228.0
+margin_bottom = 215.0
+rect_scale = Vector2( 2, 2 )
+text = "Num line segments"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 100.0
+margin_top = 300.0
+margin_right = 207.0
+margin_bottom = 315.0
+rect_scale = Vector2( 2, 2 )
+text = "Update mean?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 100.0
+margin_top = 400.0
+margin_right = 207.0
+margin_bottom = 415.0
+rect_scale = Vector2( 2, 2 )
+text = "Offset in pixels"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 400.0
+margin_right = 560.0
+margin_bottom = 415.0
+rect_scale = Vector2( 2, 2 )
+text = "Duration(s) to reach top"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 207.0
+margin_bottom = 516.0
+rect_scale = Vector2( 2, 2 )
+text = "Visibility"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton4" type="OptionButton" parent="."]
+margin_left = 430.0
+margin_top = 530.0
+margin_right = 459.0
+margin_bottom = 550.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel13" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 507.0
+margin_bottom = 516.0
+rect_scale = Vector2( 2, 2 )
+text = "Target"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox" type="SpinBox" parent="."]
+margin_left = 130.0
+margin_top = 230.0
+margin_right = 204.0
+margin_bottom = 254.0
+rect_scale = Vector2( 2, 2 )
+min_value = 1.0
+value = 1.0
+
+[node name="SpinBox4" type="SpinBox" parent="."]
+margin_left = 430.0
+margin_top = 130.0
+margin_right = 504.0
+margin_bottom = 154.0
+rect_scale = Vector2( 2, 2 )
+max_value = 1000.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox5" type="SpinBox" parent="."]
+margin_left = 730.0
+margin_top = 130.0
+margin_right = 804.0
+margin_bottom = 154.0
+rect_scale = Vector2( 2, 2 )
+max_value = 1000.0
+value = 1000.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 200.0
+margin_right = 500.0
+margin_bottom = 215.0
+rect_scale = Vector2( 2, 2 )
+text = "Min Shooter X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="."]
+margin_left = 700.0
+margin_top = 200.0
+margin_right = 800.0
+margin_bottom = 215.0
+rect_scale = Vector2( 2, 2 )
+text = "Max Shooter X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox6" type="SpinBox" parent="."]
+margin_left = 430.0
+margin_top = 230.0
+margin_right = 504.0
+margin_bottom = 254.0
+rect_scale = Vector2( 2, 2 )
+max_value = 1000.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox7" type="SpinBox" parent="."]
+margin_left = 730.0
+margin_top = 230.0
+margin_right = 804.0
+margin_bottom = 254.0
+rect_scale = Vector2( 2, 2 )
+max_value = 1000.0
+value = 1000.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 300.0
+margin_right = 500.0
+margin_bottom = 315.0
+rect_scale = Vector2( 2, 2 )
+text = "Bimodal Dist."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="."]
+margin_left = 700.0
+margin_top = 300.0
+margin_right = 800.0
+margin_bottom = 315.0
+rect_scale = Vector2( 2, 2 )
+text = "Left Probability"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox8" type="SpinBox" parent="."]
+margin_left = 430.0
+margin_top = 330.0
+margin_right = 504.0
+margin_bottom = 354.0
+rect_scale = Vector2( 2, 2 )
+max_value = 1000.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox9" type="SpinBox" parent="."]
+margin_left = 730.0
+margin_top = 330.0
+margin_right = 804.0
+margin_bottom = 354.0
+rect_scale = Vector2( 2, 2 )
+value = 50.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox2" type="SpinBox" parent="."]
+margin_left = 130.0
+margin_top = 430.0
+margin_right = 204.0
+margin_bottom = 454.0
+rect_scale = Vector2( 2, 2 )
+min_value = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox3" type="SpinBox" parent="."]
+margin_left = 430.0
+margin_top = 430.0
+margin_right = 504.0
+margin_bottom = 454.0
+rect_scale = Vector2( 2, 2 )
+min_value = 0.1
+max_value = 60.0
+step = 0.1
+value = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
